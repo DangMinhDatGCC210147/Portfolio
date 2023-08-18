@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>joognu | Responsive Bootstrap Landing Page Template</title>
+    <title>Dustin | My Own Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
     <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
@@ -66,7 +66,7 @@
                     </li>
 
                     <li class="has-submenu">
-                        <a href="services.html">Services</a>
+                        <a href="services.html">My Skills</a>
                     </li>
                     <li class="has-submenu">
                         <a href="contact.html">Contact</a>
@@ -230,55 +230,105 @@
     <!-- END PORTFOLIO -->
 
     <!-- START CONTACT -->
-    <section class="section bg-light">
+    <section class="section bg-dark pb-5">
         <div class="container">
+            <!-- start row -->
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-center mt-4">
-                        <div class="services-img">
-                            <img src="images/icons/spaceship.png" alt="">
-                        </div>
-                        <h6 class="mt-4">4514 West Street Helena</h6>
-                    </div>
+                <div class="col-lg-3">
+                    <h5 class="text-uppercase text-white">Dustin</h5>
                 </div>
 
-                <div class="col-lg-4">
-                    <div class="text-center mt-4">
-                        <div class="services-img">
-                            <img src="images/icons/mobilepay.png" alt="">
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h6 class="text-white">Home</h6>
+                            <ul class="list-unstyled footer-link mt-3">
+                                <li><a href="contact.html">About me</a></li>
+                                <li><a href="services.html">My Skills</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                            </ul>
                         </div>
-                        <h6 class="mt-4">+001 406-471-0400</h6>
+
+                        <div class="col-lg-3">
+                            <h6 class="text-white">Social Media</h6>
+                            <ul class="list-unstyled footer-link mt-3">
+                                <li><a href="https://github.com/DangMinhDatGCC210147">Github</a></li>
+                                <li><a href="#">TikTok</a></li>
+                                <li><a href="#" id="openPopup">Zalo</a></li>
+                            </ul>
+                        </div>
+                        <!-- Popup Container -->
+                        <div id="popupContainer" class="popup" style="margin-top:40px">
+                            <div class="popupContent">
+                                <!-- Nút tắt -->
+                                <span id="closePopup" class="close">&times;</span>
+                                <!-- Hình ảnh popup -->
+                                <img src="./images/Zalo.jpg" alt="Zalo QR Code" style="width: 500px;">
+                            </div>
+                        </div>
+                        <style>
+                            /* CSS cho popup */
+                            .popup {
+                                display: none;
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba(0, 0, 0, 0.7);
+                                z-index: 1;
+                            }
+
+                            .popupContent {
+                                background-color: #fff;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                padding: 20px;
+                                border-radius: 5px;
+                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                            }
+
+                            .close {
+                                position: absolute;
+                                top: 10px;
+                                right: 15px;
+                                font-size: 20px;
+                                font-weight: bold;
+                                cursor: pointer;
+                            }
+                        </style>
+                        <script>
+                            document.getElementById("openPopup").addEventListener("click", function() {
+                                document.getElementById("popupContainer").style.display = "block";
+                            });
+
+                            document.getElementById("closePopup").addEventListener("click", function() {
+                                document.getElementById("popupContainer").style.display = "none";
+                            });
+                        </script>
+                        <div class="col-lg-3">
+                            <h6 class="text-white">Contact</h6>
+                            <ul class="list-unstyled footer-link mt-3">
+                                <li><a href="">+84 907 294 396</a></li>
+                                <li><a href="">dangminhdat14@gmail.com</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-lg-4">
-                    <div class="text-center mt-4">
-                        <div class="services-img">
-                            <img src="images/icons/earth.png" alt="">
-                        </div>
-                        <h6 class="mt-4">Candiarity@joapide.com</h6>
-                    </div>
-                </div>
-
             </div>
+            <!-- end row -->
 
+            <!-- START FOOTER-AlT -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <p class="text-center text-white-50">2023 © Dustin | Alright Severed</p>
+                </div>
+            </div>
+            <!-- END FOOTER-ALT -->
         </div>
     </section>
-    <!-- END CONTACT -->
-
-    <!-- FOOTER-ALT -->
-    <footer class="pt-1 pb-1 bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="pt-4 pb-4 text-center">
-                        <p class="text-white mb-0">2021 © Joognu. Design by Themesdesign</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </footer>
     <!-- FOOTER-ALT -->
 
     <!-- javascript -->
